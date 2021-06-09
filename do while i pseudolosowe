@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    int i=1;
+ 
+    do
+    {
+        cout << i << " ";
+        i++;
+    }
+    while(i<=20);
+ 
+    return 0;
+}
+
+
+
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+int main()
+{
+    srand( time( NULL ) );
+    
+	std::cout << "Wylosowanie pierwszej liczby: " <<(( std::rand() % 100 ) + 1 ) << std::endl;
+    
+	int liczba =( std::rand() % 100 ) + 1;
+    
+	std::cout << "Wylosowanie drugiej liczby: " << liczba << std::endl;
+    
+	liczba =( std::rand() % 100 ) + 1;
+    
+	std::cout << "Wylosowanie trzeciej liczby: " << liczba << std::endl;
+ 
+    return 0;
+}
